@@ -1,0 +1,58 @@
+#playbackBox {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+button {
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#muteButton {
+    background-color: #007BFF;
+}
+
+#muteButton:hover {
+    background-color: #0056b3;
+}
+
+#toggleBoxButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+}
+
+#toggleBoxButton:hover {
+    background-color: #218838;
+}
+
+button:focus {
+    outline: 2px solid #FFD700;
+    outline-offset: 4px;
+}
+
+#playbackBox.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#playbackBox.hide {
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+}
