@@ -1,0 +1,22 @@
+.tab {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.tab-header {
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.tab.open .tab-content {
+    display: block;
+}
